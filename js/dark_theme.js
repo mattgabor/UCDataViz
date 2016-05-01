@@ -6,7 +6,7 @@
 
 // Load the fonts
 Highcharts.createElement('link', {
-   href: 'https://fonts.googleapis.com/css?family=Lato',
+   href: 'https://fonts.googleapis.com/css?family=Ubuntu',
    rel: 'stylesheet',
    type: 'text/css'
 }, null, document.getElementsByTagName('head')[0]);
@@ -25,7 +25,7 @@ Highcharts.theme = {
       //    ]
       // },
       style: {
-         fontFamily: "'Lato', sans-serif"
+         fontFamily: "'Ubuntu', sans-serif"
       },
       plotBorderColor: '#606063'
    },
