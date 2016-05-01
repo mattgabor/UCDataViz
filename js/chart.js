@@ -4,7 +4,7 @@ $(document).ready(function() {
         // Access container id and call highcharts function on it
         $('#container').highcharts({
             chart: {
-                type: 'area'
+                type: 'line'
             },
             data: {
                 csv: csv
@@ -27,8 +27,9 @@ $(document).ready(function() {
                     endAngle: 90,
                 }
             },
-            series: [{
-            }, {
+            series: [ // First series reserved for main chart
+            {},
+            {
                 type: 'pie',
                 name: '# of Occurrences',
                 data: [
@@ -75,14 +76,7 @@ $(document).ready(function() {
                     y: 2,
                     color: Highcharts.getOptions().colors[8]
                 }],
-                // plotOptions: {
-                //     pie: {
-                //         startAngle: -90,
-                //         endAngle: 90,
-                //         center: ['50%', '75%']
-                //     }
-                // },
-                center: [280, 160],
+                center: ['25%', '40%'],
                 size: 250,
                 showInLegend: false,
                 dataLabels: {
